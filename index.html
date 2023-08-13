@@ -22,8 +22,8 @@
       href="./assets/icon-petshop.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./style/grid.css" />
-    <link rel="stylesheet" href="./style/flex.css" />
+ 
+
     <link rel="stylesheet" href="./style/style.css" />
   </head>
 
@@ -31,38 +31,71 @@
     <header>
       <nav>
         <ul class="menu">
-          <li class="menu__item">
+          <li class="navItem">
             <h1 class="menu__titulo"></h1>
           </li>
-          <li class="menu__item"><a href="#" class="">Home</a></li>
-          <li class="menu__item"><a href="#">Sobre</a></li>
-          <li class="menu__item"><a href="#">Clientes</a></li>
-          <li class="menu__item"><a href="#">Loja</a></li>
+          <li class="navItem"><a href="#" class="">Home</a></li>
+          <li class="navItem"><a href="#">Sobre</a></li>
+          <li class="navItem"><a href="#">Clientes</a></li>
+          <li class="navItem"><a href="#">Loja</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="principal">
+      <span>Central Pet</span>
+      <h1>
+        Tudo para seu pet está aqui!</h1>
+        <p>
+          A Central Pet preza pela felicidade do seu pet, conheça nossos serviços e produtos.Desde 2001 ajudando a cuidar dos nossos nossos amados amigos.
+        </p>
       <section class="banner">
-        <img src="./assets/banner1.png" alt="Banner cor amarela" />
-        <img src="./assets/banner2.png" alt="Banner cor lilás" />
-        <img src="./assets/banner3.png" alt="Banner cor verde" />
-        <img src="./assets/banner4.png" alt="Banner cor laranja" />
+        <img src="./assets/petShopImage1.jpg" alt="Imagem  cor amarela" />
+        <img src="./assets/petShopImage2.jpg" alt="petShopImage cor lilás" />
+        <img src="./assets/petShopImage3.jpg" alt="petShopImage cor verde" />
+        <img src="./assets/petShopImage4.jpg" alt="petShopImage cor laranja" />
       </section>
-      <section>
+      <section id="sectionForm">
+        <h2>Registro de Atendimento</h2>
+        <p>Registro para clientes que já foram atendidos</p>
         <form action="">
           <fieldset>
             <h2>Tutor</h2>
-            <label for=""> Nome: <input type="text" /></label>
-            <label for="">Telefone: <input type="text" /></label>
-            <label for="">Endereço: <input type="text" /></label>
-            <label for="">Data de atendimento: <input type="date" /></label>
+              <div class="inputBox">
+                <label for=""> Nome: </label>
+                <input type="text" />
+              </div>
+              <div class="inputBox">
+                <label for=""> Telefone: </label>
+                <input type="text" />
+              </div>
+              <div class="inputBox">
+                <label for=""> Endereço: </label>
+                <input type="text" />
+              </div>
+              <div class="inputBox">
+                <label for=""> Data de Atendimento: </label>
+                <input type="date" />
+              </div>
+
+
+            
+            
           </fieldset>
           <fieldset>
+            <div class="inputBox">
+              
+            </div>
             <h2>Animal</h2>
-            <label for=""> Nome: <input type="text" /></label>
-            <label for="">Idade: <input type="number" /></label>
-            <label for=""
+            <div class="inputBox">
+                <label for=""> Nome: </label><input type="text" />
+            </div>
+            <div class="inputBox"> 
+              <label for="">Idade: </label>
+              <input type="number" />
+            </div>
+            <div class="selectBox">
+              <label for=""
               >Porte
 
               <select name="porte" id="">
@@ -74,7 +107,10 @@
               
               
             </label>
+            </div>
+            <button class="submitButton" type="submit">Salvar</button>
           </fieldset>
+          
         </form>
       </section>
     </main>
