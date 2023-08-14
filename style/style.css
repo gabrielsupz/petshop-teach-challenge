@@ -181,6 +181,7 @@ img:hover {
 }
 
 .welcome {
+  background-color: #111010;
 }
 
 /*banner*/
@@ -325,15 +326,6 @@ fieldset {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-.inputBox label {
-}
-
-.inputBox input[type='text'].input {
-}
-
-.inputBox input[type='text'].input:focus {
 }
 
 @media (min-width: 720px) {
