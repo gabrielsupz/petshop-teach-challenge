@@ -50,12 +50,11 @@ span {
   display: flex;
   align-items: center;
   gap: 5px;
-  background: rgb(181, 174, 174);
+  background: rgb(83, 85, 182);
   background: linear-gradient(
     90deg,
-    rgba(181, 174, 174, 1) 0%,
-    rgba(121, 122, 164, 1) 47%,
-    rgba(150, 54, 54, 1) 100%
+    rgba(83, 85, 182, 1) 0%,
+    rgba(191, 24, 24, 1) 83%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -149,6 +148,9 @@ img:hover {
   .menu {
     column-gap: 35px;
   }
+  .navLinks {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -176,6 +178,9 @@ img:hover {
   .NavItem:nth-child(5) {
     order: 2;
   }
+}
+
+.welcome {
 }
 
 /*banner*/
@@ -248,11 +253,22 @@ img:hover {
 form {
   padding: 20px 0;
   margin-top: 20px;
-  border: 1px solid #111010;
+
   display: flex;
   flex-direction: column;
   gap: 20px;
   width: 300px;
+}
+.fieldsetName {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 20px;
+}
+
+fieldset {
+  padding: 30px 0;
+  border: 1px solid #111010;
   box-shadow: black 0px 10px 15px;
 }
 label {
