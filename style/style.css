@@ -81,6 +81,7 @@ img {
 }
 
 .test:hover a {
+  pointer-events: all;
   transition: all 0.5s;
   z-index: 2;
   font-size: 30px;
@@ -225,12 +226,16 @@ span.welcome {
   height: 100%;
 }
 .test a {
+  pointer-events: none;
+  text-decoration: none;
+  color: black;
   font-family: var(--secondaryFontStyle);
-  transform: all 0.5s;
+  transition: all 0.5s;
   position: absolute;
   align-items: center;
   font-size: 30px;
   opacity: 0;
+  z-index: 0;
 }
 
 .banner {
@@ -362,9 +367,19 @@ button.submitButton {
   border: none;
   transition: all 0.5s;
   border: 1px solid;
+
+  margin-top: 10px;
+}
+button.submitButton a {
+  color: var(--text-light-gray);
+  text-decoration: none;
   font-family: var(--secondaryFontStyle);
   font-size: 14px;
-  margin-top: 10px;
+  transition: all 0.5s;
+}
+button.submitButton:hover a {
+  color: #afcc2f;
+  transition: all 0.5s;
 }
 button.submitButton:hover {
   transition: all 0.5s;
