@@ -1,8 +1,6 @@
 const form = document.querySelector('form')
 let customers = JSON.parse(localStorage.getItem('customers')) || []
-customers.forEach(e => {
-  console.log(e)
-})
+
 form.addEventListener('submit', e => {
   e.preventDefault()
 

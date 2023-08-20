@@ -26,6 +26,11 @@ h3 {
   text-transform: uppercase;
   font-family: var(--secondaryFontStyle);
 }
+button {
+  color: var(--text-color-green);
+
+  font-family: var(--primaryFontStyle);
+}
 #customersSection,
 #shopSection {
   padding: 60px 0 60px 0;
@@ -142,20 +147,6 @@ img {
 
 .navItem a:hover {
   color: var(--nav-hover-color);
-}
-
-.navItem:nth-child(4)::before {
-  padding-right: 8px;
-  content: url('../img/icone-gps.png');
-  cursor: pointer;
-  transition: 3.3s;
-}
-
-.navItem:nth-child(4)::after {
-  padding-left: 8px;
-  content: url('../img/icone-seta.png');
-  cursor: pointer;
-  transition: 3.3s;
 }
 
 .navItem:nth-child(4)::after:hover,
