@@ -50,21 +50,26 @@
   transition: all 0.5s;
 }
 
-#shopCar {
+#shopCart {
   z-index: 2;
   position: fixed;
   bottom: 1rem;
   right: 0.5rem;
 
-  transition: 200ms;
+  transition: all 0.5s;
 }
+#shopCart:hover {
+  transition: all 0.5s;
+  scale: 1.05;
+}
+
 @media (min-width: 380px) {
-  #shopCar {
-    right: 2.5rem;
+  #shopCart {
+    right: 2rem;
   }
 }
 
-#shopCar p {
+#shopCart p {
   color: var(--text-light-gray);
   font-size: 20px;
   display: flex;
@@ -75,6 +80,7 @@
   top: -20px;
   width: 30px;
   height: 30px;
+  border: 1.5px solid blue;
   border-radius: 100%;
   background-color: blueviolet;
   padding: 10px;
