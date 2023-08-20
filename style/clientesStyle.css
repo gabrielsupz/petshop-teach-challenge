@@ -1,0 +1,71 @@
+h4 {
+  font-size: 24px;
+}
+p {
+  transition: all 0.5s;
+}
+
+strong {
+  font-weight: 600;
+  color: var(--text-color-dark-green);
+}
+#clientesSection {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  justify-content: space-around;
+  row-gap: 20px;
+}
+
+div.petCard {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  transition: all 0.5s;
+  box-shadow: black 0px 10px 15px;
+  justify-content: space-between;
+  padding: 20px 20px;
+  min-width: 250px;
+  height: 200px;
+}
+div.petCard:hover {
+  height: 230px;
+}
+
+div.petCard:hover .hoverPetCardInfo {
+  opacity: 1;
+  height: fit-content;
+  transition: all 0.5s;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+
+  visibility: visible;
+
+  align-items: center;
+  justify-content: center;
+}
+
+div.hoverPetCardInfo {
+  height: 0;
+  gap: 0;
+  transition: all 0.2s;
+  opacity: 0;
+  visibility: collapse;
+}
+div.hoverPetCardInfo p {
+  font-size: 0px;
+  transition: all 0.5s;
+}
+div.petCard:hover p {
+  transition: all 0.5s;
+  font-size: 16px;
+}
+
+@media (min-width: 700px) {
+  div.petCard {
+    width: 300px;
+  }
+}
