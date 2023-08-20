@@ -1,0 +1,82 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  text-align: center;
+
+  margin: 20px auto;
+  box-shadow: black 0px 10px 15px;
+  padding-bottom: 10px;
+  gap: 10px;
+  transition: all 0.5s;
+}
+.product:hover {
+  transition: all 0.5s;
+  background: rgb(9, 4, 34);
+  background: radial-gradient(circle, rgb(141, 64, 64) 0%, rgb(39, 2, 2) 100%);
+  scale: 1.05;
+}
+.product .imgProduct {
+  border-radius: 10px 10px 0 0;
+  width: 200px;
+  height: 200px;
+}
+
+.product h2 {
+  margin-top: 10px;
+}
+.product .priceAndCart {
+  padding: 0 10px 5px 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.product .price {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.product .addToCart {
+  border-radius: 4px;
+  padding: 2px 5px 2px 5px;
+  background-color: transparent;
+  border: none;
+
+  transition: all 0.5s;
+}
+.addToCart:hover {
+  box-shadow: black 0px 10px 15px;
+  transition: all 0.5s;
+}
+
+#shopCar {
+  z-index: 2;
+  position: fixed;
+  bottom: 1rem;
+  right: 0.5rem;
+
+  transition: 200ms;
+}
+@media (min-width: 380px) {
+  #shopCar {
+    right: 2.5rem;
+  }
+}
+
+#shopCar p {
+  color: var(--text-light-gray);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -5px;
+  top: -20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: blueviolet;
+  padding: 10px;
+  /* font-family: var(--secondaryFontStyle); */
+}

@@ -5,7 +5,7 @@
 :root {
   --nav-hover-color: #aeed27;
   --text-color-green: #56b78c;
-  --text-color-dark-green: #3d708d;
+  --text-color-dark-green: #1d1b1b;
   --text-light-gray: #d9d9d9;
 
   /*fontes*/
@@ -25,6 +25,15 @@ h3 {
   color: var(--text-color-green);
   text-transform: uppercase;
   font-family: var(--secondaryFontStyle);
+}
+#clientesSection,
+#shopSection {
+  padding: 60px 0 60px 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  justify-content: space-around;
+  gap: 15px;
 }
 
 /* Main */
@@ -168,7 +177,7 @@ img {
   h1 {
     font-size: 20px;
   }
-  p {
+  footer p {
     font-size: 18px;
     width: 400px;
     line-height: 20px;
