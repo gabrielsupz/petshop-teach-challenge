@@ -26,14 +26,15 @@ h3 {
   text-transform: uppercase;
   font-family: var(--secondaryFontStyle);
 }
-#clientesSection,
+#customersSection,
 #shopSection {
   padding: 60px 0 60px 0;
   display: flex;
   flex-wrap: wrap;
   width: 90%;
   justify-content: space-around;
-  gap: 15px;
+  column-gap: 10px;
+  row-gap: 25px;
 }
 
 /* Main */

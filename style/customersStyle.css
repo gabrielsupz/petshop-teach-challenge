@@ -1,5 +1,7 @@
 h4 {
   font-size: 24px;
+  display: flex;
+  gap: 10px;
 }
 p {
   transition: all 0.5s;

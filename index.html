@@ -56,7 +56,7 @@
     <main class="main">
       <span class="welcome">Bem vindo</span>
       <h1>
-        O petshop pensado para você e seu pet,um dos melhores do Brasil, tudo para seu pet está aqui!</h1>
+        O petshop pensado para você e seu pet,um dos melhores do Brasil, tudo para seu pet está aqui, já ajudando você a 23 anos!</h1>
         
       <section class="banner">
         <div class="test">
@@ -86,45 +86,46 @@
       <section id="sectionForm">
         <h2 >Registro de Atendimento</h2>
         <p>Registro para clientes que já foram atendidos</p>
-        <form action="">
-          <fieldset>
+        <form   >
+          <fieldset name="tutorInfo">
             <h3 class="Subtitle">Tutor <img src="./assets/img-tutor-form.png" alt="imagem da parte superior de uma pessoa"></h3>
-              <div class="inputBox">
-                <label for=""> Nome: </label>
-                <input type="text" />
+              <div   class="inputBox">
+                <label for="tutorName"> Nome: </label>
+                <input required name="tutorName"  id="tutorName" type="text" />
               </div>
               <div class="inputBox">
-                <label for=""> Telefone: </label>
-                <input type="text" />
+                <label for="phone"> Telefone: </label>
+                <input required name="phone" id="phone"  type="number" />
               </div>
               <div class="inputBox">
-                <label for=""> Endereço: </label>
-                <input type="text" />
+                <label for="address"> Endereço: </label>
+                <input required name="address"  id="address" type="text" />
               </div>
               <div class="inputBox">
-                <label for=""> Data de Atendimento: </label>
-                <input type="date" />
+                <label required for="serviceDate"> Data de Atendimento: </label>
+                <input name="serviceDate" id="serviceDate" type="date" />
               </div>
 
 
             
             
           </fieldset>
-          <fieldset>
+          <fieldset name="petInfo">
            
             <h3 class="Subtitle">Animal <img src="./assets/img-animal-form.png" alt= "imagem cão e gato" srcset=""></h3>
             <div class="inputBox">
-                <label for=""> Nome: </label><input type="text" />
+                <label for="petName"> Nome: </label>
+                <input required name="petName" id="petName" type="text" />
             </div>
             <div class="inputBox"> 
-              <label for="">Idade: </label>
-              <input type="number" />
+              <label  for="petAge">Idade: </label>
+              <input  required name="petAge" id="petAge" type="number" />
             </div>
             <div class="selectBox">
-              <label for=""
+              <label for="size"
               >Porte
 
-              <select name="porte" id="">
+              <select required name="size" id="size">
                 <option  name="pequeno" >Pequeno</label>
               <option  name="medio" >Medio</label>
               <option  name="grande" >Grande</label>
@@ -136,7 +137,11 @@
             </div>
            
           </fieldset>
-           <button class="submitButton" type="submit" ><a href="./clientes.html">Salvar</a></button>
+           <button class="submitButton" type="submit" >
+            <!-- <a href=""></a> -->
+            Salvar
+          
+          </button>
         </form>
       </section>
     </main>
@@ -156,5 +161,6 @@
         <p>Desenvolvido por Gabriel Suptitz.</p>
       </div>
     </footer>
+    <script src="./js/captureClientData.js"></script>
   </body>
 </html>

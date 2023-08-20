@@ -120,11 +120,12 @@ label {
   color: var(--text-color-green);
 }
 input {
+  font-size: 16px;
   transition: all 0.5s;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background-color: #585757;
   color: var(--text-color-green);
-  padding: 2px 2px;
+  padding: 4px 2px 4px 8px;
   border-radius: 8px;
 }
 select {
