@@ -20,6 +20,7 @@ addToCartButtons.forEach(button => {
     )
 
     if (isProductInCart) {
+      alert(`Produto ${productInCart.productName} já está no carrinho!`)
       button.disabled = true
     } else {
       button.addEventListener('click', () => {
