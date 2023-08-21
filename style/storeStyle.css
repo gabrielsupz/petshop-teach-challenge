@@ -22,13 +22,12 @@ h2.slogan {
 
 .product {
   width: 200px;
-  height: 400px;
+  height: 420px;
   display: flex;
   flex-direction: column;
   border-radius: 8px;
   text-align: center;
-  justify-content: end;
-
+  justify-content: space-between;
   margin: 20px auto;
   box-shadow: black 0px 10px 15px;
   padding-bottom: 10px;
