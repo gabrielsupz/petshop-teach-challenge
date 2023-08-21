@@ -27,7 +27,7 @@ h2.slogan {
   flex-direction: column;
   border-radius: 8px;
   text-align: center;
-  justify-content: space-between;
+  justify-content: end;
 
   margin: 20px auto;
   box-shadow: black 0px 10px 15px;
