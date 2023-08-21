@@ -41,7 +41,7 @@
             <a href="./index.html" class="navLinks">Home</a>
           </li>
           <li class="navItem">
-            <a href="#rodape" class="navLinks">Sobre</a>
+            <a href="#about" class="navLinks">Sobre</a>
           </li>
           <li class="navItem">
             <a href="./customers.html"class="navLinks">Clientes</a>
@@ -54,7 +54,7 @@
     </header>
 
     <main class="main">
-      <span class="welcome">Bem vindo</span>
+      <span id="welcome">Bem vindo</span>
       <h1>
         O petshop pensado para você e seu pet,um dos melhores do Brasil, tudo para seu pet está aqui, já ajudando você a 23 anos!</h1>
         
@@ -73,16 +73,14 @@
           <img src="./assets/petShopImage3.jpg" alt="petShopImage cor verde" />
         </div>
         <div class="test">
-          <a class="linkPetImages " href="./customers.html">Sobre nós</a>
+          <a class="linkPetImages " href="./#about">Sobre nós</a>
           <img src="./assets/petShopImage4.jpg" alt="petShopImage cor laranja" />
         </div>
         
         
        
       </section>
-      <!-- <p>
-        A Central Pet preza pela felicidade do seu pet, conheça nossos serviços e produtos.Desde 2001 ajudando a cuidar dos nossos nossos amados amigos.
-      </p> -->
+    
       <section id="sectionForm">
         <h2 >Registro de Atendimento</h2>
         <p>Registro para clientes que já foram atendidos</p>
@@ -144,20 +142,32 @@
           </button>
         </form>
       </section>
+
+      <section>
+        <span id="about">Sobre nós</span>
+          <p>
+        A Central Pet preza pela felicidade do seu pet, conheça nossos serviços e produtos.Desde 2001 ajudando a cuidar dos nossos nossos amados amigos.
+      </p>
+      </section>
     </main>
     <footer class="rodape">
-      <ul class="rodape__lista">
+      <ul class="rodapeLista">
         <li>
-          <h3 class="rodape__titulo">Dúvidas? Nos contate</h3>
+          <h3 class="rodapeTitulo">Dúvidas? Nos contate</h3>
         </li>
-        <li>Wats: 05199876581</li>
-        <li>Sobre Nós</li>
-        <li>Clientes</li>
-        <li>Produtos</li>
+        <li>  Wats: 05199876581 <img class="whats" src="./assets/whats.svg" alt="whatsapp icone" srcset=""></li>
+
+        <li> <a href="./index.html#about" >Sobre Nós</a></li>
+        <li><a href="./customers.html">Clientes</a></li>
+        <li>     <a href="./store.html" >Produtos</a></li>
+       
+        
+        
+   
       </ul>
-  
-      <div class="rodape__logo">
-       <img src="./assets/logo-petshop.png" alt="logo central pet" srcset="">
+
+      <div class="rodapeLogo">
+        <img src="./assets/logo-petshop.png" alt="logo central pet" srcset="" />
         <p>Desenvolvido por Gabriel Suptitz.</p>
       </div>
     </footer>

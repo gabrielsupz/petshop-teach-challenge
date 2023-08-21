@@ -11,7 +11,17 @@ strong {
   font-weight: 600;
   color: var(--text-color-green);
 }
-
+#customers {
+  font-size: 34px;
+  background: rgb(148, 157, 201);
+  background: linear-gradient(
+    90deg,
+    rgba(148, 157, 201, 1) 0%,
+    rgba(24, 40, 212, 1) 100%
+  );
+  background-clip: initial;
+  -webkit-background-clip: text;
+}
 div.petCard {
   justify-content: center;
   display: flex;

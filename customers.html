@@ -42,10 +42,10 @@
           </li>
 
           <li class="navItem">
-            <a href="./index.html" class="navLinks">Home</a>
+            <a href="./index.html#welcome" class="navLinks">Home</a>
           </li>
           <li class="navItem">
-            <a href="#rodape" class="navLinks">Sobre</a>
+            <a href="index.html#about" class="navLinks">Sobre</a>
           </li>
           <li class="navItem">
             <a href="./customers.html" class="navLinks">Clientes</a>
@@ -58,7 +58,7 @@
     </header>
 
     <main class="main">
-      <span class="welcome"> CLIENTES </span>
+      <span id="customers"> CLIENTES </span>
       <section id="customersSection">
         <div class="petCard">
           <h4 class="Subtitle">
@@ -82,17 +82,26 @@
       </section>
     </main>
     <footer class="rodape">
-      <ul class="rodape__lista">
+      <ul class="rodapeLista">
         <li>
-          <h3 class="rodape__titulo">Dúvidas? Nos contate</h3>
+          <h3 class="rodapeTitulo">Dúvidas? Nos contate</h3>
         </li>
-        <li>Wats: 05199876581</li>
-        <li>Sobre Nós</li>
-        <li>Clientes</li>
-        <li>Produtos</li>
+        <li>
+          Wats: 05199876581
+          <img
+            class="whats"
+            src="./assets/whats.svg"
+            alt="whatsapp icone"
+            srcset=""
+          />
+        </li>
+
+        <li><a href="./index.html#about">Sobre Nós</a></li>
+        <li><a href="./customers.html">Clientes</a></li>
+        <li><a href="./store.html">Produtos</a></li>
       </ul>
 
-      <div class="rodape__logo">
+      <div class="rodapeLogo">
         <img src="./assets/logo-petshop.png" alt="logo central pet" srcset="" />
         <p>Desenvolvido por Gabriel Suptitz.</p>
       </div>

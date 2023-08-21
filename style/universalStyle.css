@@ -23,7 +23,7 @@ h2,
 h4,
 h3 {
   color: var(--text-color-green);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-family: var(--secondaryFontStyle);
 }
 button {
@@ -65,6 +65,7 @@ h1 {
 
 span {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 5px;
   background: rgb(83, 85, 182);
@@ -203,24 +204,6 @@ img {
   }
 }
 
-span.welcome {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  background: rgb(150, 69, 69);
-  background: linear-gradient(
-    90deg,
-    rgba(150, 69, 69, 1) 38%,
-    rgba(8, 104, 126, 1) 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 32px;
-  font-weight: 700;
-  font-family: var(--secondaryFontStyle);
-}
-
 /* Footer */
 .rodape {
   display: flex;
@@ -228,7 +211,7 @@ span.welcome {
   justify-content: space-between;
 }
 
-.rodape__logo {
+.rodapeLogo {
   align-self: end;
   display: flex;
   align-items: center;
@@ -249,21 +232,29 @@ span.welcome {
   white-space: nowrap;
 }
 
-.rodape__lista {
-  width: 135px;
+.rodapeLista {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.rodape__titulo {
+.rodapeTitulo {
   font-size: 18px;
   font-family: var(--secondaryFontStyle);
 }
 
-.rodape__logo {
+.rodapeLogo {
   font-size: 12px;
 }
 
-.rodape__logo img {
+.rodapeLogo img {
   align-self: center;
+}
+.rodape a {
+  text-decoration: none;
+  color: var(--text-light-gray);
 }
 
 @media (min-width: 720px) {
@@ -277,18 +268,6 @@ span.welcome {
     padding: 40px 55px;
   }
 
-  .cabecalho__seu-local::before {
-    padding-right: 8px;
-  }
-
-  .cabecalho__seu-local::after {
-    padding-left: 15px;
-  }
-
-  .menu__pesquisar {
-    width: 312px;
-  }
-
   .main {
     padding: 0 2.5rem;
   }
@@ -298,35 +277,15 @@ span.welcome {
     padding-right: 2.5rem;
   }
 
-  .rodape__logo {
+  .rodapeLogo {
     width: auto;
   }
 }
-
-@media (min-width: 1440px) {
-  /* Header */
-  .menu {
-    height: 100px;
-    font-size: 20px;
-    padding: 0 7.5rem;
-  }
-
-  .menu__titulo {
-    background-image: url('../img/logo-branco-menor.png');
-    padding: 43px 55px;
-  }
-
-  .menu__pesquisar {
-    width: 384px;
-    margin-bottom: 0;
-  }
-
-  .navInput {
-    padding-left: 15px;
-  }
-
-  .rodape {
-    padding-left: 7.5rem;
-    padding-right: 7.5rem;
+.whats {
+  width: 15px;
+}
+@media (min-width: 700px) {
+  .rodapeLista {
+    width: 170px;
   }
 }

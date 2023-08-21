@@ -1,3 +1,21 @@
+#welcome {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: rgb(150, 69, 69);
+  background: linear-gradient(
+    90deg,
+    rgba(150, 69, 69, 1) 38%,
+    rgba(8, 104, 126, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: var(--secondaryFontStyle);
+}
+
 /*banner*/
 .test {
   display: flex;

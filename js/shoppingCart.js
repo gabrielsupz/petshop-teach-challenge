@@ -28,6 +28,8 @@ addToCartButtons.forEach(button => {
           'productsInTheCart',
           JSON.stringify(productsInTheCart)
         )
+
+        alert(`Produto ${productInCart.productName} colocado no carrinho!`)
         update()
         button.disabled = true
       })
